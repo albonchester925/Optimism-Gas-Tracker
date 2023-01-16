@@ -1,0 +1,7 @@
+function fetchGasPrice() {
+  return fetch("https://gas.optimism.com/gas/v1")
+    .then(response => response.json())
+    .then(data => data.gasPrice)
+}
+
+
